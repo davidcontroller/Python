@@ -13,13 +13,11 @@ plt.plot(train.index, train, label='Train')
 plt.plot(test.index, test, label='Test')
 plt.plot(pred.index, pred, label='Holt-Winters')
 plt.legend(loc='best')
------------------------------------------------------------------------------------------------
 
 from statsmodels.tsa.seasonal import seasonal_decompose
 from dateutil.parser import parse
 
 
-df = pd.read_csv('airline-passengers.csv', parse_dates=['Month'], index_col='Month')
 
 result_mul = seasonal_decompose(df['value'], model='multiplicative', extrapolate_trend='freq')
 
