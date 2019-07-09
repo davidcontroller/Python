@@ -1,3 +1,6 @@
+#Sequencing model form the book: Kenneth R. Baker. ”Optimization Modeling with Spreadsheet”, 2nd Edition, 2011, ISBN: 978-0-47092863-9, pag. 44. 
+
+
 from pulp import *
 x1 = pulp.LpVariable("x1", lowBound=0, cat="Integer")
 x2 = pulp.LpVariable("x2", lowBound=0, cat="Integer")
