@@ -1,4 +1,4 @@
-#Sequencing model form the book: Kenneth R. Baker. ”Optimization Modeling with Spreadsheet”, 2nd Edition, 2011, ISBN: 978-0-47092863-9, pag. 44. 
+#Modello tratto dal libro: Kenneth R. Baker. ”Optimization Modeling with Spreadsheet”, 2nd Edition, 2011, ISBN: 978-0-47092863-9, pag. 44. 
 
 
 from pulp import *
