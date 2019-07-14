@@ -1,4 +1,4 @@
-#Dati tratti da Modelli di Programmazione Lineare, Luigi de Giovanni, Laura Brentegani, pag 9 esempio4
+#Ottimizzazione di trasporti: Dati tratti da Modelli di Programmazione Lineare, Luigi de Giovanni, Laura Brentegani, pag 9 esempio4
 
 
 from pulp import *
