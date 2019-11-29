@@ -152,17 +152,6 @@ for clf, label in zip(all_clf, clf_labels):
     print("Accuracy: %0.2f (+/- %0.2f) [%s]" % (scores.mean(), scores.std(), label))
 
 
-#grid search for tuning params for classifier
-    
-from sklearn.model_selection import learning_curve, GridSearchCV    
-params = {'decisiontreeclassifier__max_depth': [1, 2],'pipeline-1__clf__C': [0.001, 0.1, 100.0]}
-grid = GridSearchCV(estimator=mv_clf, param_grid=params, cv=10,  scoring='accuracy', refit = True)
-grid.fit(X_train_res, y_train_res)
-GridSearch_table_plot(grid, "C", negative=False)
-
-
-
-scores = grid.cv_results_['mean_test_score'].reshape(-1, 3).T
 
 
 
